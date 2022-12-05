@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 100px;
+    overflow: hidden;
+}
+.modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(32, 32, 32);
+    display: none;
+}
+.modal.show{
+    display: block;
+}
+.modal-content{
+    background-color: #cecece;
+    border: 1px solid black;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-width: 400px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.cat{
+    width: 80%;
+    object-fit: cover;
+    height: 50%;
+}
+
+.field{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cecece;
+    border-radius: 10px;
+    position: relative;
+}
+.field::after{
+    position: absolute;
+    content: '';
+    border: 1px solid black;
+    margin: -10px;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 34%);
+}
+.excel{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #80808021;
+    border-radius: 50%;
+}
+
+.snakeBody{
+    background: url('../img/snake.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.head{
+    background-image: url('../img/snake-over.jpg');
+   background-size: cover;
+   border-radius: 50%;
+   background-position: center;
+}
+
+.mouse{
+    background-image: url('../img/mouse.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.input{
+    margin: auto;
+    margin-top: 30px;
+    padding: 6px;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+}
